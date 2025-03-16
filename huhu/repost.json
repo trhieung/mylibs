@@ -1,0 +1,21 @@
+{
+  "result": 1,
+  "sessions": [
+    {
+      "args": {
+        "commands": [
+          "pip",
+          "install",
+          "."
+        ]
+      },
+      "name": "session_pkgutil_cve_2025_1851",
+      "result": "success",
+      "result_code": 1,
+      "signatures": [
+        "session_pkgutil_cve_2025_1851-3.11(commands=('pip', 'install', '.'))",
+        "session_pkgutil_cve_2025_1851-3.11"
+      ]
+    }
+  ]
+}

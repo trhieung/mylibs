@@ -1,0 +1,6 @@
+{
+    global:
+        my_export;
+    local:
+        *;
+};
