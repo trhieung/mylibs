@@ -25,7 +25,7 @@
 # ├── <folder_name>_export.cpp
 # ├── <folder_name>_export.hpp -> this export file will can include all the core and it obj link with their too, not including main
 # ├── local.mk
-# └── tests
+# └── test
 #     ├── test.cpp
 #     ├── unit1.cpp
 #     └── unit1.hpp
@@ -45,8 +45,8 @@ DEBUG_FLAGS = -g
 # Source files
 CORE_SRC = $(wildcard core/*.cpp)
 CORE_OBJ = $(patsubst core/%.cpp,$(RELEASE_DIR)/libs/core_obj/%.o,$(CORE_SRC))
-TEST_SRC = $(wildcard tests/*.cpp)
-TEST_OBJ = $(patsubst tests/%.cpp,$(RELEASE_DIR)/libs/test_obj/%.o,$(TEST_SRC))
+TEST_SRC = $(wildcard test/*.cpp)
+TEST_OBJ = $(patsubst test/%.cpp,$(RELEASE_DIR)/libs/test_obj/%.o,$(TEST_SRC))
 EXPORT_SRC = $(FOLDER_NAME)_export.cpp
 EXPORT_OBJ = $(RELEASE_DIR)/libs/$(FOLDER_NAME)_export.o
 
@@ -69,10 +69,10 @@ $(DEBUG_DIR)/libs/core_obj/%.o: core/%.cpp | $(DEBUG_DIR)/libs/core_obj
 	$(CXX) $(CXXFLAGS) -c $< -o $@
 
 # Compile test objects
-$(RELEASE_DIR)/libs/test_obj/%.o: tests/%.cpp | $(RELEASE_DIR)/libs/test_obj
+$(RELEASE_DIR)/libs/test_obj/%.o: test/%.cpp | $(RELEASE_DIR)/libs/test_obj
 	$(CXX) $(CXXFLAGS) -c $< -o $@
 
-$(DEBUG_DIR)/libs/test_obj/%.o: tests/%.cpp | $(DEBUG_DIR)/libs/test_obj
+$(DEBUG_DIR)/libs/test_obj/%.o: test/%.cpp | $(DEBUG_DIR)/libs/test_obj
 	$(CXX) $(CXXFLAGS) -c $< -o $@
 
 # Compile export object

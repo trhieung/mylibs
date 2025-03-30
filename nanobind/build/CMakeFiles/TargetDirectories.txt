@@ -1,0 +1,4 @@
+/home/nt/travis/mylibs/my_ext/build/CMakeFiles/object_ownership.dir
+/home/nt/travis/mylibs/my_ext/build/CMakeFiles/nanobind-static.dir
+/home/nt/travis/mylibs/my_ext/build/CMakeFiles/edit_cache.dir
+/home/nt/travis/mylibs/my_ext/build/CMakeFiles/rebuild_cache.dir

@@ -3,6 +3,8 @@
 
 // Include core header here!
 #include "core/f1.hpp"
+#include <vector>
+#include <iostream>
 
 void local_check();
 #ifdef __cplusplus
@@ -13,7 +15,7 @@ extern "C" {
 //------------------------------
 
 
-void myExport();
+void myExport(unsigned int* arr, int size);
 
 
 //------------------------------

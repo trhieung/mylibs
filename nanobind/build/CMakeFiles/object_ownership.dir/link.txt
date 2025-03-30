@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -O3 -DNDEBUG -Wl,-s -Wl,--gc-sections -shared  -o object_ownership.cpython-311-x86_64-linux-gnu.so CMakeFiles/object_ownership.dir/object_ownership.cpp.o  libnanobind-static.a

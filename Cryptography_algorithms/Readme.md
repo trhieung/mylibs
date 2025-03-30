@@ -1,3 +1,15 @@
+# Introduction
+## Table of contents
+
+## Notation
+
+# How to run this projcet
+## Make help
+First create then go to your main project or using current given project `randomized_algorithms`
+- `create-module`: input the name to get the folder of your module in in project. After create go to the `<module_name>_export.hpp` then change the word `template` to your export lib name!
+- `<module_name>/tests`: include the code without export to the shared/static library. 
+- `<module_name>/core`: Base code core being putting in this folder.
+<!-- 
 # Makefile for MEDIUM Project
 
 ## Language
@@ -72,4 +84,4 @@ When linking, compiler link all the object files under all the src dirs, recursi
 1. Why use a `submake.global`, but put all rules in `make.global`
     1. The `all` and `clean` rules in sub-dirs is different from the root-dir, these are to specified seperately.
 1. Why re-link and re-generate the target even if all the objects are updated
-    1. Since the target`$(TARGET)` depend on some PHONY targets, it may be re-generated even all non-PHONY dependencies are updated. But consider about the simplicity of the Makefile, this redundency is endurable. If anyone has a better idea, feel free to raise an issue or pull-request.
+    1. Since the target`$(TARGET)` depend on some PHONY targets, it may be re-generated even all non-PHONY dependencies are updated. But consider about the simplicity of the Makefile, this redundency is endurable. If anyone has a better idea, feel free to raise an issue or pull-request. -->
