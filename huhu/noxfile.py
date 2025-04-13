@@ -74,9 +74,8 @@ def install_packages(session, package, commands):
 
 # Define packages to build
 build_pkgs = [
-    # "pkgutil/ex_pkg",
-    # "pkgutil/glucus",
-    "pkgutil/cve_2025_1851",
+    "pkgutil/glucus",
+    # "pkgutil/cve_2025_1851",
 ]
 
 # Register sessions for each package

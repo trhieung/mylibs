@@ -12,22 +12,39 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from setuptools import setup, find_packages
+import sys
 
+from setuptools import setup, find_packages
+from pathlib import Path
+
+# Add project path to sys.path
+data_path = Path(__file__).resolve()
+sys.path.append(str(data_path))
+from glucus.core import *
 
 setup(
-    name='example_pkg_a',
+    name=PROJECT_NAME,
 
-    version='1',
+    version='1.0.0',
 
     description='',
     long_description='',
 
     author='nt_glucus',
-    author_email='nice_try.com',
+    author_email='nt_glucus@nice_try.com',
 
     license='',
 
-    packages=find_packages(exclude='tests'),
+    # packages=find_packages(exclude=["tests*", "doc*"]),
+    packages=find_packages(),
+    include_package_data=False,
+    package_data={
+        PROJECT_NAME: [
+            'data/**/*',
+            'data/**/**/*',
+            'base/**/*',
+            'base/**/**/*',
+        ]
+    },
     zip_safe=False,
 )

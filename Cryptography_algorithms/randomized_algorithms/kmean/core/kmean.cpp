@@ -42,8 +42,9 @@ void kmean::makeConvergrence()
 {
     /*
         att     |   sz              |   meaning
-    - val       | dims * nSample    |   dims = 2, sample = 3 [[1, 1], [1, 2], [3, 1]]
+    - val       | dims * nSample    | dims = 2, sample = 3 [[1, 1], [1, 2], [3, 1]]
     - centroids | nCluster          | centroids[i] = centor of cluster with id i
     - belongs   | nSample           | belongs[i] indicate the sample[i]
     */
+   
 }

@@ -5,7 +5,4 @@ from pathlib import Path
 data_path = Path(__file__).resolve().parent.parent
 sys.path.append(str(data_path))
 
-from core import *
-
-def run_poc():
-    print(f'Hi from run_poc() of {PROJECT_NAME}')
+# pyan3 utils.py test.py --dot --imported-by --grouped > callgraph.dot && dot -Tpng callgraph.dot -o callgraph.png
